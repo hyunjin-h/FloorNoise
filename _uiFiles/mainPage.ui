@@ -6,14 +6,115 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>675</width>
+    <height>1200</height>
    </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777213</width>
+    <height>16777215</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color:#89a3e3;</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>810</y>
+     <width>261</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+background-color: #e3d5ca;	
+font: 15pt &quot;나눔스퀘어_ac Bold&quot;;</string>
+   </property>
+   <property name="text">
+    <string>그래프확인</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>330</y>
+     <width>261</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15pt &quot;나눔스퀘어_ac Bold&quot;;
+    background-color: #2f3640;
+    color: #fff;
+
+	height:80px;
+	width:150px;
+
+    border-top-right-radius: 50px;  
+border-top-left-radius: 50px;  </string>
+   </property>
+   <property name="text">
+    <string>현재 소음레벨</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="level">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>430</y>
+     <width>261</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-bottom-left-radius: 20px; 
+border-bottom-right-radius: 20px;
+background-color:#ecf0f1;
+font: 50pt &quot;나눔스퀘어_ac Bold&quot;;
+ color: #000;</string>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>btn_main_to_second()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>907</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>359</x>
+     <y>985</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btn_main_to_second()</slot>
+ </slots>
 </ui>
